@@ -47,7 +47,7 @@ class Producer implements Runnable{
 
     @Override
     public void run() {
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 10; i++){
             resource.produce(i);
             try{
                 Thread.sleep(1000);
@@ -70,7 +70,7 @@ class Consumer implements Runnable{
 
     @Override
     public void run() {
-        for (int  i =0; i < 5; i++){
+        for (int  i =0; i < 10; i++){
             resource.consume();
             try{
                 Thread.sleep(1000);
