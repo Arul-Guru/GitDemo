@@ -36,13 +36,13 @@ class ThreadOne extends Thread{
         System.out.println(n);
     }
 
-    
+
 }
 
 public class Multithreading {
     public static int n = 0;
     public static void main(String[] args){
-        String[] arr = {"java","python","sql","mongodb","react","angular"};
+        String[] arr = {"java","python","sql","mongodb","react","angular","c++","javascript","html","css"};
         for(String str: arr){
             ThreadOne threadobj = new ThreadOne(str);
             threadobj.start();

@@ -88,9 +88,6 @@ public class InterThread {
 
         Thread producer_thread = new Thread(new Producer(res));
         Thread consumer_thread = new Thread(new Consumer(res));
-        Thread thread = new Thread(()->{
-
-        });
 
         producer_thread.start();
         consumer_thread.start();
